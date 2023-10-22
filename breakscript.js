@@ -13,7 +13,16 @@ chrome.storage.local.get(["workDuration"], function(result) {
   });
 
 // Set the date we're counting down to
-
+function openTimerWindow() {
+  chrome.windows.create({
+    url: 'timer.html',
+    focused: true,
+    type: 'popup',
+    width: 300,
+    height: 200,
+  }, function(newWindow) {
+    // Handle the new window if necessary
+  });}
 function count(){
 var countDownDate = new Date().getTime() + breakTime * 60 * 1000;
 console.log(breakTime + 3)
@@ -41,8 +50,8 @@ var x = setInterval(function() {
   
     // If the count down is finished, write some text
     if (distance < 0) {
-      clearInterval(x);
-      document.getElementById("demo").innerHTML = "EXPIRED";
+      openTimerWindow();
+      close();
     }
   }, 1000);
 }  
