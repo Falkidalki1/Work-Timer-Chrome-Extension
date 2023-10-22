@@ -1,0 +1,13 @@
+{
+	"manifest_version":3,
+	"name":"Work timer",
+	"description":"A program that tells you when to take a break when working",
+	"version":"1.0",
+	"permissions": ["tabs",
+					"storage",
+					"notifications"],
+	"action":{
+		"default_popup": "hello.html",
+		"default_icon": "hello.png"
+	}
+}

@@ -1,0 +1,19 @@
+.centered{
+    text-align: center;
+}
+
+/* Style for the work timer */
+.work-timer {
+    background-color: green;
+    /* Add other styles as needed */
+  }
+  
+  /* Style for the break timer */
+  .break-timer {
+    background-color: red;
+    /* Add other styles as needed */
+  }
+
+body{
+    background-color: white;
+}
