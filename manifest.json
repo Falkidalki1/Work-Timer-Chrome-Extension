@@ -7,7 +7,7 @@
 					"storage",
 					"notifications"],
 	"action":{
-		"default_popup": "hello.html",
-		"default_icon": "hello.png"
+		"default_popup": "popup.html",
+		"default_icon": "timer.png"
 	}
 }
