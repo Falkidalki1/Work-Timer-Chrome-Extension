@@ -6,12 +6,6 @@ chrome.storage.local.get(["workDuration"], function(result) {
   console.log("Work time is currently " + workTime);
   count()
   });
-
-  chrome.storage.local.get(["breakDuration"], function(result) {
-    breakTime = parseInt(result.breakDuration);
-    console.log("Break time is currently " + breakTime);
-  });
-
 function openTimerWindow() {
   chrome.windows.create({
     url: 'breaktimer.html',
